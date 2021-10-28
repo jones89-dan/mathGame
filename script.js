@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   var currentQuestion;
+  var timeLeft = 10;
 
   function randomNumberGenerator(max) {
   return Math.floor(Math.random() * max);
@@ -45,6 +46,15 @@ $(document).ready(function(){
   $('#user-input').on('keyup', function () {
     checkAnswer(Number($(this).val()), currentQuestion.answer);
   });
+
+  var interval = setInterval(function () {
+    timeLeft--;
+    $('#time-left').text(timeLeft);
+    if (timeLeft === 0) {
+      clearInterval(interval);
+    }
+    console.log(timeLeft);
+  }, 1000);
 
   renderNewQuestion();
 });
