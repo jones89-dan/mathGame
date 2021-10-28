@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>10 Second Math Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -13,9 +14,16 @@
     <script src="script.js"></script>
   </head>
   <body>
-  <div id = "mathEquation"></div>
-    <form id="mathGame">
-      <input id="userInput" type="text" placeholder="number" required/>
-    </form>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>10 Sec Math Game</h2>
+            <h1 id="equation"></h1>
+            <form id="mathGame">
+              <input id="userInput" type="text" placeholder="number" required/>
+            </form>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
