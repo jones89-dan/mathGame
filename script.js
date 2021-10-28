@@ -52,6 +52,7 @@ $(document).ready(function(){
 
         if (timeLeft === 0) {
           updateTimeLeft(10);
+          updateScore(-score);
         }
         interval = setInterval(function () {
           updateTimeLeft(-1);
