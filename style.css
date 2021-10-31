@@ -1,3 +1,13 @@
-h2 {
-  color: blue;
+h1, h2, h3, h4, p {
+  color: #edc531;
 }
+
+body {
+  background: #bc4b51;
+}
+ #footer {
+   position: fixed;
+   bottom: 0;
+   left:0;
+   width:100%;
+ }
