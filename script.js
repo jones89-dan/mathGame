@@ -52,8 +52,14 @@ $(document).ready(function(){
             question.answer = num1 + num2;
             question.equation = String(num1) + operator + String(num2);
         } else if (operator === '-') {
+          if (num1 < num2) {
+            question.answer = num2 - num1;
+            question.equation = String(num2) + operator + String(num1);
+          }
+          else {
             question.answer = num1 - num2;
             question.equation = String(num1) + operator + String(num2);
+          }
         } else if (operator === '*') {
             question.answer = num1 * num2;
             question.equation = String(num1) + operator + String(num2);
