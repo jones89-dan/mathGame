@@ -32,8 +32,20 @@
             <p>seconds left</p>
             <h1 id="equation"></h1>
             <form id="mathGame">
-              <input id="user-input" type="number" />
+              <input id="user-input" type="number" /><br><br>
+              <div class = "mixedMath">
+                <input type="checkbox" id="addition" name="addition" value="addition" checked/>
+                <label for="addition"> + </label>
+                <input type="checkbox" id="subtraction" name="subtraction" value="subtraction"/>
+                <label for="subtraction"> - </label>
+                <input type="checkbox" id="multiplication" name="multiplication" value="multiplication"/>
+                <label for="multiplication"> x </label>
+                <input type="checkbox" id="division" name="division" value="division"/>
+                <label for="division"> / </label>
+              </div>
               <h4>Score: <span id="score"></span></h4>
+              <h4>High Score: <span id="high-score"></span></h4>
+            </div>
             </form>
           </div>
       </div>
